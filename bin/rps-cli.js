@@ -66,4 +66,24 @@ else if (args._.length === 0) {
 
 else {
      let playeroption = args._[0].toLowerCase();
-     if ( 
+     if (rpsls.optionsrps.includes(playeroption)) {
+        console.log(JSON.stringify(rpsls.rps(playeroption)));
+     }
+     else {
+        console.error (
+ '
+ This is an invalid argument.
+ The only acceptable arguments are: rock | paper | scissors
+   
+    );
+    console.log(
+Rules for Rock Paper Scissors:
+
+- Scissors CUTS Paper
+- Paper COVERS Rock
+- Rock CRUSHES Scissors          
+'
+     );
+   }
+} 
+
