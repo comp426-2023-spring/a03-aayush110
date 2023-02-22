@@ -73,4 +73,31 @@ else if (args._.length === 0) {
 }
 
 else {
-   
+   let playeroption = args._[0].toLowerCase();
+   if (rpsls.optionsrpsls.includes(playeroption)) {
+      console.log(JSON.stringify(rpsls.rpsls(playeroption)));
+  }
+  else {
+       console.error(
+ '
+ This is an invalid argument.
+ The only acceptable arguments are: rock | paper | scissors | lizard | spock
+ ' 
+        );
+        console.log(
+ `Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+- Scissors CUTS Paper
+- Paper COVERS Rock
+- Rock SMOOSHES Lizard
+- Lizard POISONS Spock
+- Spock SMASHES Scissors
+- Scissors DECAPITATES Lizard
+- Lizard EATS Paper
+- Paper DISPROVES Spock
+- Spock VAPORIZES Rock
+- Rock CRUSHES Scissors                    
+`
+        );
+    
+    }
+} 

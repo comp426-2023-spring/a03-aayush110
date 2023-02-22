@@ -74,10 +74,10 @@ else {
  '
  This is an invalid argument.
  The only acceptable arguments are: rock | paper | scissors
-   
+ '   
     );
     console.log(
-Rules for Rock Paper Scissors:
+'Rules for Rock Paper Scissors:
 
 - Scissors CUTS Paper
 - Paper COVERS Rock
