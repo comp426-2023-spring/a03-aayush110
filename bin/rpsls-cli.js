@@ -78,10 +78,8 @@ else {
   }
   else {
        console.error(
- '
- This is an invalid argument.
- The only acceptable arguments are: rock | paper | scissors | lizard | spock
- ' 
+ 
+ 'This is an invalid argument.The only acceptable arguments are: rock | paper | scissors | lizard | spock' 
         );
         console.log(
  `Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
