@@ -5,13 +5,14 @@ import minimist from "minimist";
 const args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
-   console.log(`Usage: node-rpsls [SHOT]
-   Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
+   console.log(
+`Usage: node-rpsls [SHOT]
+Play the Lizard-Spock Expansion of Rock Paper Scissors (RPSLS)!
    
    -h, --help      display this help message and exit
    -r, --rules     display the rules and exit
 
-   Examples:
+Examples:
     node-rpsls        Return JSON with single player RPSLS result.
                     e.g. {"player":"rock"}
     node-rpsls rock   Return JSON with results for RPSLS played against a simulated opponent.
@@ -78,11 +79,13 @@ else {
   }
   else {
        console.error(
- 
- 'This is an invalid argument.The only acceptable arguments are: rock | paper | scissors | lizard | spock' 
+        `
+   Invalid argument.
+   Acceptable arguments: rock | paper | scissors | lizard | spock
+   `
         );
         console.log(
- `Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
+`Rules for the Lizard-Spock Expansion of Rock Paper Scissors:
 - Scissors CUTS Paper
 - Paper COVERS Rock
 - Rock SMOOSHES Lizard

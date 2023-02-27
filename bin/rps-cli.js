@@ -5,7 +5,9 @@ import minimist from "minimist";
 const args = minimist(process.argv.slice(2));
 
 if (args.h || args.help) {
-   console.log(`Usage: node-rps [SHOT]
+   console.log(
+    
+  `Usage: node-rps [SHOT]
    Play Rock Paper Scissors (RPS)
 
    -h, --help      display this help message and exit
@@ -16,13 +18,15 @@ if (args.h || args.help) {
                    e.g. {"player":"rock"}
   node-rps rock    Return JSON with results for RPS played against a simulated opponent.
                    e.g {"player":"rock","opponent":"scissors","result":"win"}
- `);
+ `
+  );
   process.exit(0);
 }
 
 if (args.r || args.rules) {
    console.log(
-   `Rules for Rock Paper Scissors:
+
+  `Rules for Rock Paper Scissors:
 
    - Scissors CUTS Paper
    - Paper COVERS Rock
@@ -63,15 +67,15 @@ else if (args._.length === 0) {
 }
 
 else {
-     let playeroption = args._[0].toLowerCase();
-     if (rpsls.optionsrps.includes(playeroption)) {
+    let playeroption = args._[0].toLowerCase();
+    if (rpsls.optionsrps.includes(playeroption)) {
         console.log(JSON.stringify(rpsls.rps(playeroption)));
      }
      else {
         console.error (
 ` 
- This is an invalid argument.
- The only acceptable arguments are: rock | paper | scissors
+ Invalid argument.
+ Acceptable arguments: rock | paper | scissors
 `    
     );
     console.log(
@@ -84,4 +88,3 @@ else {
      );
    }
 } 
-
