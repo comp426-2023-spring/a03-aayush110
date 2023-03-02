@@ -74,7 +74,7 @@ else if (args._.length === 0) {
 
 else {
    let playeroption = args._[0].toLowerCase();
-   if (standard.optionsrpsls.includes(playeroption)) {
+   if (rpsls.optionsrpsls.includes(playeroption)) {
       console.log(JSON.stringify(rpsls.rpsls(playeroption)));
   }
   else {
