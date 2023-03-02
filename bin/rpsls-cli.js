@@ -69,13 +69,13 @@ Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
 }
 
 else if (args._.length === 0) {
-     console.log(JSON.stringify(standard.rpslsStandard()));
+     console.log(JSON.stringify(rpsls.rpslsStandard()));
 }
 
 else {
    let playeroption = args._[0].toLowerCase();
    if (standard.optionsrpsls.includes(playeroption)) {
-      console.log(JSON.stringify(standard.rpsls(playeroption)));
+      console.log(JSON.stringify(rpsls.rpsls(playeroption)));
   }
   else {
        console.error(

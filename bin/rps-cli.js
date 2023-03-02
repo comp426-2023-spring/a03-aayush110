@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {standard} from "../lib/rpsls.js"
+import rpsls from "../lib/rpsls.js";
 import minimist from "minimist";
 
 const args = minimist(process.argv.slice(2));
@@ -63,13 +63,13 @@ Rules for Rock Paper Scissors:
 }
 
 else if (args._.length === 0) {
-      console.log(JSON.stringify(standard.rpsStandard()));
+      console.log(JSON.stringify(rpsls.rpsStandard()));
 }
 
 else {
     let playeroption = args._[0].toLowerCase();
-    if (standard.optionsrps.includes(playeroption)) {
-        console.log(JSON.stringify(standard.rps(playeroption)));
+    if (rpsls.optionsrps.includes(playeroption)) {
+        console.log(JSON.stringify(rpsls.rps(playeroption)));
      }
      else {
         console.error (
