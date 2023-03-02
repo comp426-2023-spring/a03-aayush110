@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import {rpsls} from "../lib/rpsls.js";
+import {standard} from "../lib/rpsls.js";
 import minimist from "minimist";
 
 const args = minimist(process.argv.slice(2));
@@ -69,13 +69,13 @@ Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
 }
 
 else if (args._.length === 0) {
-     console.log(JSON.stringify(rpsls.rpslsStandard()));
+     console.log(JSON.stringify(standard.rpslsStandard()));
 }
 
 else {
    let playeroption = args._[0].toLowerCase();
-   if (rpsls.optionsrpsls.includes(playeroption)) {
-      console.log(JSON.stringify(rpsls.rpsls(playeroption)));
+   if (standard.optionsrpsls.includes(playeroption)) {
+      console.log(JSON.stringify(standard.rpsls(playeroption)));
   }
   else {
        console.error(
