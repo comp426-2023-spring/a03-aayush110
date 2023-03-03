@@ -69,7 +69,7 @@ Rules for the Lizard-Spock Espansion of Rock Paper Scissors:
 }
 
 else if (args._.length === 0) {
-     console.log(JSON.stringify(rpsls.rpslsDefault()));
+     console.log(JSON.stringify(rpsls.rpslsStandard()));
 }
 
 else {
