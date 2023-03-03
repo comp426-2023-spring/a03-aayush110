@@ -63,7 +63,7 @@ Rules for Rock Paper Scissors:
 }
 
 else if (args._.length === 0) {
-      console.log(JSON.stringify(rpsls.rpsStandard()));
+      console.log(JSON.stringify(rpsls.rpsDefault()));
 }
 
 else {
